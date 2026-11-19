@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>MUMU — 视觉 · 动态 · 程序化</title>
+<meta name="description" content="个人作品集：传统 CG、虚幻引擎、AI 影像与程序化生成。">
+<link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'><rect width='32' height='32' fill='%230b0b0c'/><text x='16' y='22' font-size='16' font-family='sans-serif' fill='%23f4f4f5' text-anchor='middle'>M</text></svg>">
+<link rel="stylesheet" href="assets/css/main.css">
+</head>
+<body>
+
+<div class="grain" aria-hidden="true"></div>
+
+<header class="site-header" id="siteHeader">
+  <a class="brand" href="#top">
+    <span class="brand__mark">M</span>
+    <span class="brand__text">MUMU</span>
+  </a>
+  <nav class="nav">
+    <a href="#works">作品</a>
+    <a href="#about">简介</a>
+    <a href="#contact">联系</a>
+  </nav>
+</header>
+
+<main id="top">
+
+  <!-- 首屏 -->
+  <section class="hero">
+    <div class="hero__inner">
+      <p class="hero__meta" data-reveal>
+        <span>视觉设计 · 动态影像</span>
+        <span class="dot"></span>
+        <span>2026</span>
+      </p>
+      <h1 class="hero__title" data-reveal>
+        <span class="line">影像与代码</span>
+        <span class="line line--dim">之间的东西</span>
+      </h1>
+      <p class="hero__sub" data-reveal>
+        传统 CG ／ 虚幻引擎 ／ AI 影像 ／ 程序化生成
+      </p>
+    </div>
+    <div class="hero__bottom">
+      <a class="scroll-hint" href="#works">
+        <span>向下</span>
+        <span class="scroll-hint__line"></span>
+      </a>
+      <p class="hero__note">个人作品集 · 持续更新</p>
+    </div>
+  </section>
+
+  <!-- 作品 -->
+  <section class="works" id="works">
+    <div class="section-head">
+      <h2 class="section-head__title" data-reveal>作品</h2>
+      <p class="section-head__desc" data-reveal>
+        按生产管线分组，从建模渲染到实时与生成。
+      </p>
+    </div>
+
+    <div class="filters" id="filters" data-reveal>
+      <button class="chip is-active" data-filter="all">全部</button>
+      <button class="chip" data-filter="cg">传统 CG</button>
+      <button class="chip" data-filter="ue">UE</button>
+      <button class="chip" data-filter="ai">AI 视频</button>
+      <button class="chip" data-filter="proc">程序化开发</button>
+    </div>
+
+    <div class="works__grid" id="worksGrid"></div>
+    <p class="works__empty" id="worksEmpty" hidden>这个分类下还没有作品。</p>
+  </section>
+
+  <!-- 简介 -->
+  <section class="about" id="about">
+    <div class="section-head">
+      <h2 class="section-head__title" data-reveal>简介</h2>
+    </div>
+    <div class="about__grid">
+      <div class="about__text" data-reveal>
+        <p class="lead">
+          做视觉，也写点代码。习惯把一个想法从概念一路推到能播、能跑、能用的形态。
+        </p>
+        <p>
+          关注真实质感与技术手段之间的平衡：该用渲染解决的用渲染，该用实时解决的用实时，
+          该交给生成模型的就交给它——但最后呈现的气味得是同一个。
+        </p>
+      </div>
+      <dl class="about__facts" data-reveal>
+        <div class="fact">
+          <dt>方向</dt>
+          <dd>视觉设计 · 动态影像 · 技术美术</dd>
+        </div>
+        <div class="fact">
+          <dt>工具</dt>
+          <dd>Maya · Blender · Houdini · UE · Substance · ComfyUI</dd>
+        </div>
+        <div class="fact">
+          <dt>开发</dt>
+          <dd>HTML / CSS / JS · Python · 着色器</dd>
+        </div>
+        <div class="fact">
+          <dt>状态</dt>
+          <dd>可接项目 · 长期合作</dd>
+        </div>
+      </dl>
+    </div>
+  </section>
+
+  <!-- 联系 -->
+  <section class="contact" id="contact">
+    <div class="contact__inner">
+      <p class="contact__label" data-reveal>有项目想聊？</p>
+      <a class="contact__mail" href="mailto:hello@example.com" data-reveal>
+        hello@example.com
+      </a>
+      <div class="contact__links" data-reveal>
+        <a href="#" rel="noopener">Bilibili</a>
+        <a href="#" rel="noopener">站酷</a>
+        <a href="#" rel="noopener">GitHub</a>
+      </div>
+    </div>
+  </section>
+
+</main>
+
+<footer class="site-footer">
+  <span>© <span id="year"></span> MUMU</span>
+  <span class="site-footer__right">本站以代码构建</span>
+</footer>
+
+<script src="assets/js/works-data.js"></script>
+<script src="assets/js/main.js"></script>
+</body>
+</html>
